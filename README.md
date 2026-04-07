@@ -66,5 +66,5 @@ PAWSEY-SPECIFIC NOTES
 - Slurm defaults to submitting from $PWD (no need for -l wd)
 - Use $MYSCRATCH, $MYSOFTWARE, $MYGROUP for Pawsey paths
 - Load modules the same way: module load samtools/1.19
-- For GPU jobs on Setonix GPU nodes: --partition=gpu --gres=gpu:N
+- For GPU jobs on Setonix GPU nodes: --partition=gpu --gres=gpu:N --account=pawseyxxxx-gpu
 ```
