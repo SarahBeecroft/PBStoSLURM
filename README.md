@@ -21,11 +21,11 @@ DIRECTIVES
 ----------
 #PBS -N jobname              →  #SBATCH --job-name=jobname
 #PBS -q normal               →  #SBATCH --partition=work
-#PBS -l walltime=HH:MM:SS   →  #SBATCH --time=HH:MM:SS
+#PBS -l walltime=HH:MM:SS    →  #SBATCH --time=HH:MM:SS
 #PBS -l ncpus=N              →  #SBATCH --ntasks=1 --cpus-per-task=N
 #PBS -l mem=XGB              →  #SBATCH --mem=XG
 #PBS -l ngpus=N              →  #SBATCH --gres=gpu:N
-#PBS -l jobfs=XGB            →  (use $MYSCRATCH or $MYSOFTWARE)
+#PBS -l jobfs=XGB            →  (not needed on Pawsey)
 #PBS -l storage=gdata/xx     →  (not needed on Pawsey)
 #PBS -l wd                   →  (Slurm defaults to submit dir)
 #PBS -P project              →  #SBATCH --account=project
